@@ -1,18 +1,16 @@
 #include <stdio.h>
 
-int main() {
-    int i;
-    int n = 1;
-
-    printf("Multiplication Table 10x10\n\n");
-
-    while (n <= 10){
-        for (i = 1; i <= 10; i++) {
-            printf("%4d", i * n);
+void print_table(){
+    for (int row = 1; row <= 10; row++){
+        for (int col = 1; col <= 10; col++) {
+            printf("%4d", col * row);
         }
-        printf("\n");
-        n++;
+    printf("\n");
     }
+}
 
+int main() {
+    printf("Multiplication Table 10x10\n\n");
+    print_table();
     return 0;
 }
