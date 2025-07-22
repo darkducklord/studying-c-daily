@@ -2,7 +2,7 @@
 
 float calculate_price(float record_base_price, float markup_percent) {
 
-    return record_base_price * (1 + markup_percent / 100);
+    return record_base_price * (1 + markup_percent / 100.00f);
 
 }
 
