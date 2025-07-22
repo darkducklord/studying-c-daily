@@ -3,7 +3,7 @@
 float calculate_price(float record_base_price, float markup_percent) {
 
     return record_base_price * (1 + markup_percent / 100.00f);
-
+    
 }
 
 void print_record(int index,
@@ -17,6 +17,7 @@ void print_record(int index,
 }
 
 int main() {
+
     const float markup_percent = 30.00f;
 
     printf("Records in stock\n\n");
